@@ -102,7 +102,8 @@ main {
         display: flex;
         padding: 0; }
         main .work nav ul a {
-          text-decoration: none; }
+          text-decoration: none;
+          color: unset; }
         main .work nav ul li {
           background: #2a2a2a;
           padding: 20px 0;
@@ -207,6 +208,14 @@ main {
     main nav {
       position: relative;
       right: 20%; } }
+@media only screen and (max-width: 750px) {
+  .about {
+    flex-direction: column; }
+    .about .picture img {
+      display: block;
+      margin: auto; }
+    .about .text h2 {
+      text-align: center; } }
 @media only screen and (max-width: 675px) {
   main .me {
     display: block;
@@ -232,6 +241,36 @@ main {
     margin: auto; }
   main nav {
     position: unset; } }
+.container {
+  max-width: 980px;
+  margin: auto; }
+
+.about {
+  color: #4e4e4e;
+  display: flex; }
+  .about .picture img {
+    width: 400px; }
+  .about .text {
+    margin-left: 20px; }
+    .about .text p {
+      line-height: 25px; }
+
+.contact {
+  display: flex; }
+  .contact h2 {
+    margin-bottom: 60px; }
+  .contact .text {
+    margin-top: 135px;
+    margin-left: 50px; }
+    .contact .text a {
+      text-decoration: none;
+      color: white;
+      background: #0e1304;
+      padding: 10px 20px;
+      font-size: 18px; }
+      .contact .text a:hover {
+        background: #555553; }
+
 .tr {
   height: 20px;
   visibility: hidden;
