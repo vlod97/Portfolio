@@ -33,7 +33,8 @@ main {
     width: 273px;
     height: 561px;
     background: #282828;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 7px; }
     main .me h3 {
       text-align: center;
       font-weight: 600; }
@@ -117,14 +118,27 @@ main {
           main .work nav ul li:hover {
             transition: 0.4s;
             color: #d8d8d8; }
+          main .work nav ul li:first-child {
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px; }
+          main .work nav ul li:last-child {
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px; }
           main .work nav ul li ul {
             position: absolute;
             width: 100%;
             flex-direction: column;
             padding: 0;
-            bottom: 60px; }
+            bottom: 60px;
+            padding-bottom: 10px; }
             main .work nav ul li ul li {
               padding: 5px; }
+              main .work nav ul li ul li:first-child {
+                border-top-left-radius: unset;
+                border-bottom-left-radius: unset; }
+              main .work nav ul li ul li:last-child {
+                border-top-right-radius: unset;
+                border-bottom-right-radius: unset; }
         main .work nav ul .dropDown {
           overflow: hidden; }
           main .work nav ul .dropDown:hover {
@@ -138,8 +152,9 @@ main {
       text-decoration: underline;
       margin-bottom: 0px; }
     main .files .filesList .btnCenter {
-      margin-top: 15px;
-      text-align: center; }
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 15px; }
       main .files .filesList .btnCenter .btnCoinBox {
         color: white;
         background: #2a2a2a;

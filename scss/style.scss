@@ -39,6 +39,7 @@ main {
     height: 561px;
     background: #282828;
     overflow: hidden;
+    border-radius: 7px;
     h3 {
       // margin-top: 5px;
       text-align: center;
@@ -125,6 +126,7 @@ main {
         padding: 0;
         a{
           text-decoration: none;
+          color: unset;
         }
         li {
           background: #2a2a2a;
@@ -136,9 +138,18 @@ main {
           list-style-type: none;
           transition: 0.4s;
           position: relative;
+          // margin-bottom: 10px;
           &:hover {
             transition: 0.4s;
             color: #d8d8d8;
+          }
+          &:first-child{
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+          }
+          &:last-child{
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
           }
           ul {
             position: absolute;
@@ -146,10 +157,16 @@ main {
             flex-direction: column;
             padding: 0;
             bottom: 60px;
+            padding-bottom: 10px;
             li {
               padding: 5px;
-              &:last-child {
-                // margin-bottom: 10px;
+              &:first-child{
+                border-top-left-radius: unset;
+                border-bottom-left-radius: unset;
+              }
+              &:last-child{
+                border-top-right-radius: unset;
+                border-bottom-right-radius: unset;
               }
             }
           }
@@ -174,8 +191,9 @@ main {
     }
     .filesList {
       .btnCenter {
-        margin-top: 15px;
+        margin-top: 20px;
         text-align: center; // width: 100%;
+        margin-bottom: 15px;
         .btnCoinBox {
           color: white;
           background: rgba(42, 42, 42, 1);
@@ -275,7 +293,22 @@ main {
     }
   }
 }
-
+@media only screen and (max-width: 750px) {
+  .about{
+    flex-direction: column;
+    .picture{
+      img{
+        display: block;
+        margin: auto;
+      }
+    }
+    .text{
+      h2{
+        text-align: center;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 675px) {
   main {
     .me {
@@ -308,6 +341,48 @@ main {
     }
     nav {
       position: unset;
+    }
+  }
+}
+.container{
+  max-width: 980px;
+  margin: auto;
+}
+
+
+.about{
+  color: rgb(78, 78, 78);
+  display: flex;
+  .picture{
+    img{
+      width: 400px;
+    }
+  }
+  .text{
+    margin-left: 20px;
+    p{
+      line-height: 25px;
+    }
+  }
+}
+
+.contact{
+  display: flex;  
+  h2{
+    margin-bottom: 60px;
+  }
+  .text{
+    margin-top: 135px;
+    margin-left: 50px;
+    a{
+      text-decoration: none;
+      color: white;
+      background: rgb(14, 19, 4);
+      padding: 10px 20px;
+      font-size: 18px;
+      &:hover{
+        background: rgb(85, 85, 83);
+      }
     }
   }
 }
