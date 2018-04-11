@@ -189,6 +189,10 @@ nav {
 .workMarginTop {
   margin-top: 10px; }
 
+.container {
+  max-width: 700px;
+  margin: auto; }
+
 .toRight {
   left: -195px; }
 
