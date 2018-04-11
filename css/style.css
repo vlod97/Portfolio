@@ -97,52 +97,6 @@ main {
               margin: 0; }
             main .work .items .workItem .workImg .workHidden img {
               width: 181px; }
-    main .work nav {
-      margin-top: 39px; }
-      main .work nav ul {
-        display: flex;
-        padding: 0; }
-        main .work nav ul a {
-          text-decoration: none;
-          color: unset; }
-        main .work nav ul li {
-          background: #2a2a2a;
-          padding: 20px 0;
-          color: #808080;
-          font-weight: 600;
-          text-align: center;
-          flex-grow: 1;
-          list-style-type: none;
-          transition: 0.4s;
-          position: relative; }
-          main .work nav ul li:hover {
-            transition: 0.4s;
-            color: #d8d8d8; }
-          main .work nav ul li:first-child {
-            border-top-left-radius: 7px;
-            border-bottom-left-radius: 7px; }
-          main .work nav ul li:last-child {
-            border-top-right-radius: 7px;
-            border-bottom-right-radius: 7px; }
-          main .work nav ul li ul {
-            position: absolute;
-            width: 100%;
-            flex-direction: column;
-            padding: 0;
-            bottom: 60px;
-            padding-bottom: 10px; }
-            main .work nav ul li ul li {
-              padding: 5px; }
-              main .work nav ul li ul li:first-child {
-                border-top-left-radius: unset;
-                border-bottom-left-radius: unset; }
-              main .work nav ul li ul li:last-child {
-                border-top-right-radius: unset;
-                border-bottom-right-radius: unset; }
-        main .work nav ul .dropDown {
-          overflow: hidden; }
-          main .work nav ul .dropDown:hover {
-            overflow: unset; }
   main .files {
     flex-shrink: 0;
     width: 210px; }
@@ -179,6 +133,61 @@ main {
         main .files .filesList .items a p {
           margin: 0;
           text-align: center; }
+
+nav {
+  margin-top: 39px; }
+  nav ul {
+    display: flex;
+    padding: 0; }
+    nav ul a {
+      text-decoration: none;
+      color: unset; }
+    nav ul li {
+      background: #2a2a2a;
+      padding: 20px 0;
+      color: #808080;
+      font-weight: 600;
+      text-align: center;
+      flex-grow: 1;
+      list-style-type: none;
+      transition: 0.4s;
+      position: relative; }
+      nav ul li:hover {
+        transition: 0.4s;
+        color: #d8d8d8; }
+      nav ul li:first-child {
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px; }
+      nav ul li:last-child {
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px; }
+      nav ul li ul {
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        bottom: 60px;
+        padding-bottom: 10px; }
+        nav ul li ul li {
+          padding: 5px; }
+          nav ul li ul li:first-child {
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset; }
+          nav ul li ul li:last-child {
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset; }
+      nav ul li .toBottom {
+        padding-top: 10px;
+        bottom: unset;
+        top: 60px;
+        z-index: 2; }
+    nav ul .dropDown {
+      overflow: hidden; }
+      nav ul .dropDown:hover {
+        overflow: unset; }
+
+.workMarginTop {
+  margin-top: 10px; }
 
 .toRight {
   left: -195px; }

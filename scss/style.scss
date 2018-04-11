@@ -119,66 +119,6 @@ main {
         }
       }
     }
-    nav {
-      margin-top: 39px;
-      ul {
-        display: flex;
-        padding: 0;
-        a{
-          text-decoration: none;
-          color: unset;
-        }
-        li {
-          background: #2a2a2a;
-          padding: 20px 0;
-          color: #808080;
-          font-weight: 600;
-          text-align: center;
-          flex-grow: 1;
-          list-style-type: none;
-          transition: 0.4s;
-          position: relative;
-          // margin-bottom: 10px;
-          &:hover {
-            transition: 0.4s;
-            color: #d8d8d8;
-          }
-          &:first-child{
-            border-top-left-radius: 7px;
-            border-bottom-left-radius: 7px;
-          }
-          &:last-child{
-            border-top-right-radius: 7px;
-            border-bottom-right-radius: 7px;
-          }
-          ul {
-            position: absolute;
-            width: 100%;
-            flex-direction: column;
-            padding: 0;
-            bottom: 60px;
-            padding-bottom: 10px;
-            li {
-              padding: 5px;
-              &:first-child{
-                border-top-left-radius: unset;
-                border-bottom-left-radius: unset;
-              }
-              &:last-child{
-                border-top-right-radius: unset;
-                border-bottom-right-radius: unset;
-              }
-            }
-          }
-        }
-        .dropDown {
-          overflow: hidden;
-          &:hover {
-            overflow: unset;
-          }
-        }
-      }
-    }
   }
   .files {
     flex-shrink: 0;
@@ -231,6 +171,77 @@ main {
       }
     }
   }
+}
+
+
+nav {
+  margin-top: 39px;
+  ul {
+    display: flex;
+    padding: 0;
+    a{
+      text-decoration: none;
+      color: unset;
+    }
+    li {
+      background: #2a2a2a;
+      padding: 20px 0;
+      color: #808080;
+      font-weight: 600;
+      text-align: center;
+      flex-grow: 1;
+      list-style-type: none;
+      transition: 0.4s;
+      position: relative;
+      // margin-bottom: 10px;
+      &:hover {
+        transition: 0.4s;
+        color: #d8d8d8;
+      }
+      &:first-child{
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+      }
+      &:last-child{
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+      }
+      ul {
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        bottom: 60px;
+        padding-bottom: 10px;
+        li {
+          padding: 5px;
+          &:first-child{
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+          }
+          &:last-child{
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+          }
+        }
+      }
+      .toBottom{
+        padding-top: 10px;
+        bottom: unset;
+        top: 60px;
+        z-index: 2;
+      }
+    }
+    .dropDown {
+      overflow: hidden;
+      &:hover {
+        overflow: unset;
+      }
+    }
+  }
+}
+.workMarginTop{
+  margin-top: 10px;
 }
 
 .toRight {
