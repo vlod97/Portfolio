@@ -276,8 +276,19 @@ nav {
 .about {
   color: #4e4e4e;
   display: flex; }
-  .about .picture img {
-    width: 400px; }
+  .about .picture {
+    position: relative;
+    overflow: auto;
+    width: 400px;
+    height: 268px;
+    margin: auto; }
+    .about .picture img {
+      width: 400px; }
+    .about .picture img {
+      position: absolute;
+      transition: opacity .5s ease-in; }
+    .about .picture img + img {
+      opacity: 0; }
   .about .text {
     margin-left: 20px; }
     .about .text p {

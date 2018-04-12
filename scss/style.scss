@@ -173,13 +173,12 @@ main {
   }
 }
 
-
 nav {
   margin-top: 39px;
   ul {
     display: flex;
     padding: 0;
-    a{
+    a {
       text-decoration: none;
       color: unset;
     }
@@ -192,17 +191,16 @@ nav {
       flex-grow: 1;
       list-style-type: none;
       transition: 0.4s;
-      position: relative;
-      // margin-bottom: 10px;
+      position: relative; // margin-bottom: 10px;
       &:hover {
         transition: 0.4s;
         color: #d8d8d8;
       }
-      &:first-child{
+      &:first-child {
         border-top-left-radius: 7px;
         border-bottom-left-radius: 7px;
       }
-      &:last-child{
+      &:last-child {
         border-top-right-radius: 7px;
         border-bottom-right-radius: 7px;
       }
@@ -215,17 +213,17 @@ nav {
         padding-bottom: 10px;
         li {
           padding: 5px;
-          &:first-child{
+          &:first-child {
             border-top-left-radius: unset;
             border-bottom-left-radius: unset;
           }
-          &:last-child{
+          &:last-child {
             border-top-right-radius: unset;
             border-bottom-right-radius: unset;
           }
         }
       }
-      .toBottom{
+      .toBottom {
         padding-top: 10px;
         bottom: unset;
         top: 60px;
@@ -240,7 +238,8 @@ nav {
     }
   }
 }
-.workMarginTop{
+
+.workMarginTop {
   margin-top: 10px;
 }
 
@@ -309,22 +308,24 @@ nav {
     }
   }
 }
+
 @media only screen and (max-width: 750px) {
-  .about{
-    flex-direction: column;
-    .picture{
-      img{
+  .about {
+    flex-direction: column;    
+    .picture {
+      img {
         display: block;
         margin: auto;
       }
     }
-    .text{
-      h2{
+    .text {
+      h2 {
         text-align: center;
       }
     }
   }
 }
+
 @media only screen and (max-width: 675px) {
   main {
     .me {
@@ -360,57 +361,68 @@ nav {
     }
   }
 }
-.container{
+
+.container {
   max-width: 980px;
   margin: auto;
 }
 
-
-.about{
+.about {
   color: rgb(78, 78, 78);
-  display: flex;
-  .picture{
-    img{
-      width: 400px;
+  display: flex; // .profile {
+  // }
+  .picture {
+    position: relative;
+    overflow: auto;
+    width: 400px;
+    height: 268px;
+    margin: auto;
+    img {
+      width: 400px; // position: absolute;
+    }
+    img {
+      position: absolute;
+      transition: opacity .5s ease-in;
+    }
+    img+img {
+      opacity: 0;
     }
   }
-  .text{
+  .text {
     margin-left: 20px;
-    p{
+    p {
       line-height: 25px;
     }
   }
 }
 
-.contact{
-  display: flex;  
-  h2{
+.contact {
+  display: flex;
+  h2 {
     margin-bottom: 60px;
   }
-  .text{
+  .text {
     margin-top: 135px;
     margin-left: 50px;
-    a{
+    a {
       text-decoration: none;
       color: white;
       background: rgb(14, 19, 4);
       padding: 10px 20px;
       font-size: 18px;
-      &:hover{
+      &:hover {
         background: rgb(85, 85, 83);
       }
     }
   }
 }
 
-.tr{
+.tr {
   height: 20px;
   visibility: hidden;
   position: relative;
   bottom: 250px;
 }
-
-
 
 /*jssor slider loading skin spin css*/
 
