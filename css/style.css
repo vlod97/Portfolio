@@ -291,6 +291,9 @@ nav {
       opacity: 0; }
   .about .text {
     margin-left: 20px; }
+    .about .text h2 {
+      margin-top: 10px;
+      margin-bottom: 10px; }
     .about .text p {
       line-height: 25px; }
 
